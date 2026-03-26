@@ -1,13 +1,131 @@
-body {
+/* ===== Reset ===== */
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ===== Background ===== */
+
+body {
+
+  font-family: 'Segoe UI', sans-serif;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+
+  color: white;
+}
+
+/* ===== Root layout ===== */
+
+#root {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: flex-start;
+
+  align-items: center;
+
+  padding-left: 400px;
+}
+
+/* ===== Form Container ===== */
+
+.card {
+
+  width: 420px;
+
+  padding: 30px;
+
+  background: rgba(0,0,0,0.5);
+
+  backdrop-filter: blur(8px);
+
+  border-radius: 12px;
+}
+
+/* ===== Title ===== */
+
+h1 {
+
+  font-size: 32px;
+
+  margin-bottom: 25px;
+}
+
+/* ===== Inputs ===== */
+
+input {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+
+  border-radius: 25px;
+
+  border: 2px solid orange;
+
+  background: transparent;
+
+  color: white;
+
+  outline: none;
+}
+
+input::placeholder {
+
+  color: #ccc;
+}
+
+/* ===== Button ===== */
+
+button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border-radius: 25px;
+
+  border: none;
+
+  background: orange;
+
+  color: black;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-top: 10px;
+}
+
+button:hover {
+
+  background: #ffb84d;
+}
+
+/* ===== Small text ===== */
+
+.smallText {
+
+  font-size: 14px;
+
+  color: #ccc;
+
+  margin-top: 10px;
+
+  text-align: center;
 }
